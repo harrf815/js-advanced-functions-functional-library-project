@@ -5,11 +5,14 @@ const fi = (function() {
     },
 
     each: function() {
-
+      const arr = [1,2,3] 
+      
     },
 
-    map: function() {
-
+    map: function(collection, callBack) {
+      if (!(collection instanceof Array)) {
+        collection = Object.values(collection)
+      }
     },
 
     reduce: function() {
